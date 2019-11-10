@@ -1,7 +1,6 @@
 package cn.backurl.feign.controller;
 
-import cn.backurl.feign.service.SchedualServiceHi;
-import jdk.nashorn.internal.runtime.logging.Logger;
+import cn.backurl.feign.service.login.SchedualServiceHi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

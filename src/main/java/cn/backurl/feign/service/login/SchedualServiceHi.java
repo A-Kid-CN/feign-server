@@ -1,4 +1,4 @@
-package cn.backurl.feign.service;
+package cn.backurl.feign.service.login;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
