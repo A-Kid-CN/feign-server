@@ -1,6 +1,7 @@
 package cn.backurl.feign.service.music;
 
 
+import cn.backurl.feign.service.music.impl.MusicCommentServiceImpl;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author akid
  * @since 2019-08-13
  */
-@FeignClient(value = "music-server")
+@FeignClient(value = "music-server",fallback = MusicCommentServiceImpl.class)
 public interface MusicCommentService  {
 
 

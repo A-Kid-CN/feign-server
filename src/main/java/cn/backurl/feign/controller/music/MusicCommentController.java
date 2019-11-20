@@ -31,6 +31,6 @@ public class MusicCommentController {
             return AjaxResult.failure(ResultCode.ParamException);
         }
         Object obj = musicCommentService.pageComments(songId, pageNo, pageSize, keyword);
-        return AjaxResult.success(obj);
+        return obj;
     }
 }
